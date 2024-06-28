@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wadatrip - Your Travel Companion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: #FF4500; /* Dark orange for the logo */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #00CED1; /* Turquoise for hover effect */
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .featured-destinations {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .destination {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+        }
+
+        .destination img {
+            width: 100%;
+            height: auto;
+        }
+
+        .destination-info {
+            padding: 1rem;
+        }
+
+        .destination-info h3 {
+            margin: 0;
+            color: #FF4500; /* Dark orange for the headings */
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .buttons a {
+            display: inline-block;
+            background-color: #00CED1; /* Turquoise for buttons */
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #20B2AA; /* Darker turquoise for hover */
+        }
+
+        .section {
+            padding: 2rem 0;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            color: #00CED1; /* Turquoise for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Wadatrip</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#traveler">Traveler</a></li>
+                <li><a href="#operator">Operator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Wadatrip</h1>
+            <p>Your perfect travel companion</p>
+            <div class="buttons">
+                <a href="#traveler">Enter as Traveler</a>
+                <a href="#operator">Enter as Operator</a>
+            </div>
+            <img src="traveling_pic.jpeg" alt="Traveling" style="width: 100%; height: auto; margin-top: 1rem;">
+        </section>
+
+        <section id="destinations" class="section">
+            <h2>Featured Destinations</h2>
+            <div class="featured-destinations">
+                <div class="destination">
+                    <img src="destination1.jpeg" alt="Destination 1">
+                    <div class="destination-info">
+                        <h3>Destination 1</h3>
+                        <p>Discover the beauty of Destination 1 with its stunning landscapes and vibrant culture.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="destination2.jpeg" alt="Destination 2">
+                    <div class="destination-info">
+                        <h3>Destination 2</h3>
+                        <p>Experience the charm of Destination 2, known for its historic sites and delicious cuisine.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="destination3.jpeg" alt="Destination 3">
+                    <div class="destination-info">
+                        <h3>Destination 3</h3>
+                        <p>Explore the adventure and natural wonders of Destination 3, a true traveler's paradise.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="traveler" class="section">
+            <h2>Explore as Traveler</h2>
+            <p>Find and book your next adventure.</p>
+            <img src="traveler.jpeg" alt="Traveler" style="width: 100%; height: auto; margin-top: 1rem;">
+        </section>
+
+        <section id="operator" class="section">
+            <h2>Operator Panel</h2>
+            <p>Manage your itineraries and view your sales statistics.</p>
+            <img src="operator.jpeg" alt="Operator" style="width: 100%; height: auto; margin-top: 1rem;">
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#terms">Terms and Conditions</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+        <p>&copy; 2024 Wadatrip. All rights reserved.</p>
+    </footer>
+</body>
+</html>
